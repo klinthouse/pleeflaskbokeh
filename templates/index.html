@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Input Panel</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="form">
+        <form action="/" method="POST">
+            Enter ticker:
+            <br>
+            <input type="text" name="ticker" value="FB">
+            <br>
+            Enter Start Date:
+            <br>
+            <input type="text" name="start_date" value="YYYY-MM-DD">
+            <br>
+            Enter End Date:
+            <br>
+            <input type="text" name="end_date" value="YYYY-MM-DD">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+{% endblock %}
